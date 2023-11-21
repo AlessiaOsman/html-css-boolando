@@ -10,7 +10,7 @@
 }
 
 /*generics*/
-body{
+body {
     margin-top: 150px;
 }
 
@@ -19,7 +19,7 @@ header {
     position: fixed;
     left: 0;
     right: 0;
-    top:0;
+    top: 0;
     z-index: 1;
 
 }
@@ -56,7 +56,7 @@ h4 {
     margin-bottom: 10px;
 }
 
-span{
+span {
     color: black;
     font-weight: normal;
     text-decoration: line-through;
@@ -74,18 +74,18 @@ span{
     justify-content: flex-end;
 }
 
-.header-footer-flex{
+.header-footer-flex {
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.bg-color-red{
+.bg-color-red {
     background-color: red;
 }
 
-.bg-color-green{
+.bg-color-green {
     background-color: green;
 }
 
@@ -105,34 +105,35 @@ span{
 }
 
 /*main*/
-.shop-grid{
+.shop-grid {
     flex-wrap: wrap;
     display: flex;
     margin: 0 -10px;
+    margin-bottom: 20px;
 }
 
-.shop-grid .item{
+.shop-grid .item {
     padding: 10px;
     flex-basis: calc(100% / 3);
     position: relative;
 }
 
-.shop-grid img{
+.shop-grid img {
     margin-bottom: 5px;
 }
 
 .brand,
-.title, 
+.title,
 .price {
     font-size: 14px;
 }
 
-.price{
+.price {
     color: red;
     font-weight: bold;
 }
 
-.badge-container{
+.badge-container {
     position: absolute;
     left: 0;
     bottom: 100px;
@@ -141,9 +142,21 @@ span{
     gap: 5px;
 }
 
-.badge{
+.badge {
     padding: 5px 10px;
     color: #ffffff;
 }
 
+.favourite-icon {
+    background-color: #ffffff;
+    color: #000000;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    font-size: 24px;
+    padding: 20px;
+}
 
+.favourite-icon:hover {
+    color: red;
+}
