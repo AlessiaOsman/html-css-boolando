@@ -160,3 +160,17 @@ span {
 .favourite-icon:hover {
     color: red;
 }
+
+.hover-image{
+    display: none;
+}
+
+.shop-grid .item:hover .hover-image{
+    display: block;
+    
+}
+
+.shop-grid .item:hover .image{
+    display:none;
+    
+}
