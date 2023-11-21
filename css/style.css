@@ -10,9 +10,17 @@
 }
 
 /*generics*/
+body{
+    margin-top: 150px;
+}
 
 header {
     background-color: #ff6900;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    z-index: 1;
 
 }
 
@@ -48,6 +56,12 @@ h4 {
     margin-bottom: 10px;
 }
 
+span{
+    color: black;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+
 /*utils*/
 .container {
     max-width: 1200px;
@@ -60,13 +74,22 @@ h4 {
     justify-content: flex-end;
 }
 
-/*header*/
-.navbar {
+.header-footer-flex{
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+.bg-color-red{
+    background-color: red;
+}
+
+.bg-color-green{
+    background-color: green;
+}
+
+/*header*/
 
 .navbar>* {
     flex-basis: 20%;
@@ -81,10 +104,46 @@ h4 {
     text-decoration: underline;
 }
 
-/*footer*/
-.footer-content {
-    height: 100px;
+/*main*/
+.shop-grid{
+    flex-wrap: wrap;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin: 0 -10px;
 }
+
+.shop-grid .item{
+    padding: 10px;
+    flex-basis: calc(100% / 3);
+    position: relative;
+}
+
+.shop-grid img{
+    margin-bottom: 5px;
+}
+
+.brand,
+.title, 
+.price {
+    font-size: 14px;
+}
+
+.price{
+    color: red;
+    font-weight: bold;
+}
+
+.badge-container{
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    margin-left: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.badge{
+    padding: 5px 10px;
+    color: #ffffff;
+}
+
+
