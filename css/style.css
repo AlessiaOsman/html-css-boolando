@@ -1,0 +1,68 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/*generics*/
+
+header{
+    background-color: #ff6900;
+    
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+a, 
+i{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/*utils*/
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.list-icons{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+/*header*/
+.navbar{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar > *{
+    flex-basis: 20%;
+    padding: 10px 0;
+}
+
+.menu a{
+    font-weight: bold;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+}
